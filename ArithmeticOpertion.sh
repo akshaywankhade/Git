@@ -1,15 +1,15 @@
 #!/bin/bash -x
 
-read -p "Enter first Num: " x
-read -p "Enter second Num: " y
-read -p "Enter third Num: " z
+read -p "Enter first Num: " a
+read -p "Enter second Num: " b
+read -p "Enter third Num: " c
 
-a=$(( $x + $y * $z ))
-b=$(( $z + $x / $y ))
-c=$(( $x % $y + $z ))
-d=$(( $x * $y + $z ))
+w=$(( $a + $b * $c ))
+x=$(( $a * $b + $c ))
+y=$(( $c % $a / $b ))
+z=$(( $a % $b + $c ))
 
-echo $a
-echo $b
-echo $c
-echo $d
+echo $w
+echo $x
+echo $y
+echo $z
